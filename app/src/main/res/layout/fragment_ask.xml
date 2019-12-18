@@ -1,0 +1,203 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_ask_left"
+                app:layout_widthPercent="45%"
+                app:layout_heightPercent="35%"
+                app:layout_marginTopPercent="10%"
+                app:layout_marginLeftPercent="3%"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/category_clothes" />
+
+            <TextView
+                android:id="@+id/image_ask_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/image_ask_left"
+                android:layout_alignTop="@+id/image_ask_left"
+                android:layout_alignRight="@+id/image_ask_left"
+                android:layout_alignBottom="@+id/image_ask_left"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:text="@string/image"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/image_ask_right"
+                app:layout_widthPercent="45%"
+                app:layout_heightPercent="35%"
+                app:layout_marginTopPercent="10%"
+                app:layout_marginRightPercent="3%"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border2"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/category_clothes" />
+
+            <TextView
+                android:id="@+id/image_ask_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/image_ask_right"
+                android:layout_alignTop="@+id/image_ask_right"
+                android:layout_alignRight="@+id/image_ask_right"
+                android:layout_alignBottom="@+id/image_ask_right"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:text="@string/image"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_marginLeftPercent="3%"
+                app:layout_marginRightPercent="3%"
+                app:cardElevation="5dp"
+                android:layout_below="@id/image_ask_left"
+                app:cardBackgroundColor="@color/grey_transparent"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/question"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edittext_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:hint="@string/question_hint"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:gravity="top"
+                            android:maxLength="250"
+                            android:background="@drawable/border_edittext"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@id/linear"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/category"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@id/linear2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/time"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+           </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_ask"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardLayout"
+                android:background="@color/grey_transparent"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/ask_button"
+                style="?android:textAppearanceSmall"
+                android:layout_centerInParent="true"
+                android:textStyle="bold" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

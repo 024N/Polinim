@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/comment_cardview"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleView_inner_comment_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/inner_comment_profile_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/circleView_inner_comment_profile"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/toast"
+                    android:text="Ali Veli"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/inner_comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/comment_cardview"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:textColor="@color/colorBlack"
+            android:text="10 2018 13.00 "
+            android:textSize="13dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

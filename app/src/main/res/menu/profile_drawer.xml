@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homepage"
+            android:icon="@drawable/ic_drawer_homepage"
+            android:title="@string/drawer_homepage" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_drawer_myprofile"
+            android:title="@string/drawer_my_profile" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_drawer_myshare"
+            android:title="@string/drawer_my_shares" />
+        <item
+            android:id="@+id/nav_follow"
+            android:icon="@drawable/ic_drawer_myfollow"
+            android:title="@string/drawer_my_follow" />
+        <item
+            android:id="@+id/nav_groups"
+            android:icon="@drawable/ic_drawer_mygroup"
+            android:title="@string/drawer_my_group" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/drawer_settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_drawer_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

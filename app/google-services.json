@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "544981529393",
+    "firebase_url": "https://polinim-59f69.firebaseio.com",
+    "project_id": "polinim-59f69",
+    "storage_bucket": "polinim-59f69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544981529393:android:99790e71f3b99343",
+        "android_client_info": {
+          "package_name": "root.polinim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544981529393-4b8hp181okhvmb6co3rcv7r4fm4r2nh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAPVKqAeshMzeiSDYXqavq9uzWlYkoTns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
